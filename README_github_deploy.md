@@ -1,14 +1,4 @@
-# DCCB UP Digital Transformation Framework
 
-**NABARD–SSPL Advisory Framework 2025–2027**  
-AI Readiness and Digital Banking Product Effectiveness Model for DCCBs in Uttar Pradesh
-
-## 🚀 Deploy to GitHub Pages
-
-1. Create a new GitHub repository (e.g., `dccb-up-framework`)
-2. Upload `index.html` to the root of the repository
-3. Go to **Settings → Pages → Source: main branch / root**
-4. Your site will be live at `https://yourusername.github.io/dccb-up-framework/`
 
 ## 📁 File Structure
 ```
