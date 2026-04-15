@@ -2241,86 +2241,526 @@ body{font-family:'Inter',sans-serif;color:var(--text1);background:var(--cream);o
     </div>
   </div>
 </section>
-="glo-abbr">FPO</span><span class="glo-expand">+</span></div><div class="glo-def">Farmer Producer Organisation — legally registered collective of farmers for aggregated market access. Highest-ROI DCCB client segment. FPO management has digital literacy; working capital loans secured by receivables.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">GBPEM</span><span class="glo-expand">+</span></div><div class="glo-def">Generic Bank Product Effectiveness Model — the 5-axis scoring framework (PMS·RAS·ICI·FIQ·CVDS) that replaces aspiration-driven procurement with evidence-based product prioritisation for Rural Financial Institutions.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">KCC</span><span class="glo-expand">+</span></div><div class="glo-def">Kisan Credit Card — revolving crop credit product for Indian farmers. Anchor product of every DCCB. Current UP DCCB TAT: 14–42 days. Digital LOS target: 2–5 days. 8–12% NPA rate currently; AI scoring targets 3–5%.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">LOS</span><span class="glo-expand">+</span></div><div class="glo-def">Loan Origination System — digital workflow managing complete application-to-disbursal process. Integrates Aadhaar eKYC, Bhulekh land records, PM Kisan DB, CIBIL, satellite NDVI, weather API, and PMFBY auto-enrol.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">NACH</span><span class="glo-expand">+</span></div><div class="glo-def">National Automated Clearing House — NPCI bulk payment for EMI/mandate-based debit. Critical UP adaptation: seasonal variable-date mandate aligned to kharif (Oct–Nov) and rabi (Apr–May) harvest cycles.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">NABARD</span><span class="glo-expand">+</span></div><div class="glo-def">National Bank for Agriculture and Rural Development — apex development bank for rural India. Infused ₹42,000+ crore into cooperative banks in FY 2024–25. Operates OSS (Off-Site Surveillance System) for cooperative bank monitoring.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">NDVI</span><span class="glo-expand">+</span></div><div class="glo-def">Normalised Difference Vegetation Index — satellite-derived crop health metric from ISRO NRSC. Used in EWS: NDVI drop &gt;15% below seasonal average triggers Orange alert. Used in AI credit scoring for agri PD estimation.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">NPA</span><span class="glo-expand">+</span></div><div class="glo-def">Non-Performing Asset — loan with principal/interest unpaid for 90+ days. Current UP DCCB KCC NPA rate: 8–12%. EWS target: reduce to 4–6% (DM-RFI). Pre-NPA intervention at Orange stage recovers 78% vs 42% at NPA.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">PACS</span><span class="glo-expand">+</span></div><div class="glo-def">Primary Agricultural Credit Society — village-level cooperative; last-mile credit delivery. 63,000 functional PACS nationally. In UP, PACS data arrives at DCCBs on paper — the most critical data quality gap to solve.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">PMFBY</span><span class="glo-expand">+</span></div><div class="glo-def">Pradhan Mantri Fasal Bima Yojana — crop insurance scheme. Government subsidy covers 85%+ of premium. Farmer pays only 1.5–2% of sum insured. DM-RFI auto-enrolment: 98%+ at KCC disbursal. Current UP rate: &lt;40%.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">RFI</span><span class="glo-expand">+</span></div><div class="glo-def">Rural Financial Institution — the DCCB category designation in this framework. Three categories: DM-RFI (Digitally Mature, ~4 UP DCCBs), PD-RFI (Partially Digitalized, ~32 UP DCCBs), PDC-RFI (Pre-Digital, ~14 UP DCCBs).</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">SLR</span><span class="glo-expand">+</span></div><div class="glo-def">Statutory Liquidity Ratio = SLR Securities / NDTL × 100. Minimum 18.00% of NDTL (RBI, 2024). SSPL compliance engine triggers alert at 18.50% — before the 18% floor is breached. Currently computed manually in Excel in most UP DCCBs.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">SSPL</span><span class="glo-expand">+</span></div><div class="glo-def">Sahakar Sarathi Pvt Ltd — NABARD's shared services entity backed by Ministry of Cooperation + NCDC. Targets 130 million cooperative banking customers. Expected ₹1,500 crore annual savings from Year 5. Serves all 352 DCCBs.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">UPI</span><span class="glo-expand">+</span></div><div class="glo-def">Unified Payments Interface — NPCI real-time payment protocol. 10 billion+ monthly transactions (2024). For UP rural clients: entry via USSD *99# (feature phone, no data) → AePS → UPI QR at PACS → UPI 123PAY → full mobile UPI.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">USSD</span><span class="glo-expand">+</span></div><div class="glo-def">Unstructured Supplementary Service Data — *99# banking on any GSM feature phone without internet. Zero data cost. Supports balance inquiry, mini-statement, fund transfer. First digital product for all PDC-RFI DCCBs. Deploy in 30–45 days.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">V-CIP</span><span class="glo-expand">+</span></div><div class="glo-def">Video Customer Identification Process — RBI-approved remote KYC via video call. Enables rural account opening without branch visit. Critical for migrant worker accounts (city worker opens home-DCCB account remotely). DM-RFI only initially.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">ADEI</span><span class="glo-expand">+</span></div><div class="glo-def">Annual Digital Effectiveness Index — SSPL/NABARD composite digital maturity score (0–100) published annually per DCCB. PDC-RFI: below 30. PD-RFI: 30–60. DM-RFI: above 60. Used for peer benchmarking and category upgrade decisions.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">e-NWR</span><span class="glo-expand">+</span></div><div class="glo-def">Electronic Negotiable Warehouse Receipt — WDRA-issued digital receipt enabling post-harvest collateral lending. Farmer deposits grain → e-NWR issued → DCCB lends 70–80% of market value → farmer repays after selling at better price. Eliminates distress selling.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">BC</span><span class="glo-expand">+</span></div><div class="glo-def">Business Correspondent — DCCB-appointed agent providing doorstep banking. Monthly income potential (active BC): ₹10,950–18,450. Device: smartphone + micro-ATM (₹12,000–15,000). Services: AePS, BBPS, account opening, KCC application assistance.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">DM-RFI</span><span class="glo-expand">+</span></div><div class="glo-def">Digitally Mature RFI — Category 1. ~4 UP DCCBs. 55–70 nationally. All 10 CBS criteria met. SSPL posture: AI integration, satellite NDVI, FPO finance, SSPL SOC. Primary gap: analytics layer and PACS 100% completion.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">PD-RFI</span><span class="glo-expand">+</span></div><div class="glo-def">Partially Digitalized RFI — Category 2. ~32 UP DCCBs. 195–210 nationally. CBS live but underutilised. SSPL posture: Completion and Consolidation. Priority: PACS data quality, seasonal NACH, BC micro-ATM, semi-automated compliance.</div></div>
-      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">PDC-RFI</span><span class="glo-expand">+</span></div><div class="glo-def">Pre-Digital Commencing RFI — Category 3. ~14 UP DCCBs. 85–90 nationally. CBS partial or batch. SSPL posture: Foundation First. CBS stabilisation → staff literacy → Aadhaar eKYC → AePS → basic compliance automation.</div></div>
+
+<!-- ════════════════════════════════════════════════════════
+     ROADMAP SECTION — FULLY REBUILT WITH WORKING TABS
+════════════════════════════════════════════════════════ -->
+<section id="roadmap" class="section section-dark">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-eyelet">Section 10 · Strategic Roadmap</div>
+      <h2 class="sec-title" style="color:var(--white);">36-Month <span style="color:var(--teal-b);">Implementation Roadmap</span></h2>
+      <div class="sec-rule" style="background:linear-gradient(90deg,var(--teal-b),var(--gold-l));"></div>
+      <p class="sec-desc" style="color:rgba(255,255,255,.6);">Phased plan calibrated to each RFI category. The journey is sequenced, evidence-based, and achievable — no DCCB is forced to leap from paper to AI in a single step.</p>
+    </div>
+
+    <!-- Tab switcher -->
+    <div class="roadmap-tabs reveal" id="roadmapTabs">
+      <div class="rtab active dm" data-target="rm-dm" onclick="switchRoadmap(this)">🌟 DM-RFI · AI Integration</div>
+      <div class="rtab pd" data-target="rm-pd" onclick="switchRoadmap(this)">⚡ PD-RFI · Completion</div>
+      <div class="rtab pdc" data-target="rm-pdc" onclick="switchRoadmap(this)">🌱 PDC-RFI · Foundation</div>
+    </div>
+
+    <!-- DM-RFI Roadmap -->
+    <div class="roadmap-content active" id="rm-dm">
+      <div class="roadmap-phases">
+        <div class="phase-card reveal" data-delay="1">
+          <div class="phase-head ph1">
+            <div class="phase-period">Phase 1 · Months 0–6</div>
+            <div class="phase-title">API Enablement &amp; Channel Activation</div>
+          </div>
+          <div class="phase-body">
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">CBS API enablement — REST APIs for SSPL and fintech partners</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">SSPL white-label mobile app live in Hindi + regional language</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">Regulatory compliance engine auto-computes CRAR/SLR from CBS</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">BBPS BOU registration with NPCI initiated</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">WhatsApp banking via SSPL shared API in Hindi</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">Seasonal NACH mandate configured for kharif/rabi harvest cycles</div></div>
+            <div class="phase-target"><strong>Month 6:</strong> 40%+ digital transactions · Compliance cycle 30 days · 2,000+ active app users · BBPS generating ₹50K+/month</div>
+          </div>
+        </div>
+        <div class="phase-card reveal" data-delay="2">
+          <div class="phase-head ph2">
+            <div class="phase-period">Phase 2 · Months 6–18</div>
+            <div class="phase-title">AI Layer &amp; Revenue Products</div>
+          </div>
+          <div class="phase-body">
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">NPA EWS deployed via SSPL ML platform (CBS + NACH bounce + satellite NDVI)</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">Digital KCC LOS upgraded to full AI scoring with Bhulekh + PM Kisan APIs</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">PMFBY auto-enrolment at 98%+ at KCC disbursal (from current &lt;40%)</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">FPO working capital loan products formalised — highest-ROI product</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">V-CIP remote account opening deployed for migrant worker accounts</div></div>
+            <div class="phase-target"><strong>Month 18:</strong> NPA 20% lower · AI scoring for 50%+ KCC · BBPS ₹1L+/month · FPO finance operational</div>
+          </div>
+        </div>
+        <div class="phase-card reveal" data-delay="3">
+          <div class="phase-head ph3">
+            <div class="phase-period">Phase 3 · Months 18–36</div>
+            <div class="phase-title">Full Digital Maturity &amp; SSPL SOC</div>
+          </div>
+          <div class="phase-body">
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">Satellite NDVI in real-time daily credit risk decisions</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">PACS ERP integration reaches 90%+ of linked PACS</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">SSPL SOC 24×7 cybersecurity monitoring activated</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">e-NWR warehouse receipt lending for UP grain belt farmers</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">FPO supply chain finance at full scale — ₹60L+ annual income</div></div>
+            <div class="phase-target"><strong>Month 36:</strong> ADEI score 75+/100 · Full DM-RFI certification · ₹8+ Cr annual revenue uplift</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PD-RFI Roadmap -->
+    <div class="roadmap-content" id="rm-pd">
+      <div class="roadmap-phases">
+        <div class="phase-card reveal" data-delay="1">
+          <div class="phase-head ph1">
+            <div class="phase-period">Phase 1 · Months 0–6</div>
+            <div class="phase-title">Foundation Completion</div>
+          </div>
+          <div class="phase-body">
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">All branches brought fully online in real-time CBS (100%)</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">PACS data quality audit — identify and correct key errors</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">Seasonal NACH mandate configured for 500+ loan accounts (kharif/rabi)</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">BC micro-ATM deployed at block-level PACS centres</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">Compliance engine Phase 1: CBS extract → structured Excel → 45-day cycle</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">USSD *99# registered — all feature phones can check balance</div></div>
+            <div class="phase-target"><strong>Month 6:</strong> 100% branches live · 30% digital · NACH 20% loans · Compliance 45 days</div>
+          </div>
+        </div>
+        <div class="phase-card reveal" data-delay="2">
+          <div class="phase-head ph2">
+            <div class="phase-period">Phase 2 · Months 6–18</div>
+            <div class="phase-title">Analytics &amp; Product Expansion</div>
+          </div>
+          <div class="phase-body">
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">Power BI MIS dashboard connected to CBS — real-time branch visibility</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">Rules-based NPA EWS generates daily follow-up lists for recovery team</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">Digital KCC hybrid LOS — digital form + eKYC + CIBIL → TAT 5–7 days</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">BBPS sub-agent activation via existing BOU — commission income begins</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">Aadhaar eKYC extended to all branches (from HQ-only)</div></div>
+            <div class="phase-target"><strong>Month 18:</strong> NPA 15% lower · 50%+ digital · BBPS ₹75,000+/month · TAT 5–7 days</div>
+          </div>
+        </div>
+        <div class="phase-card reveal" data-delay="3">
+          <div class="phase-head ph3">
+            <div class="phase-period">Phase 3 · Months 18–36</div>
+            <div class="phase-title">Transition to DM-RFI Status</div>
+          </div>
+          <div class="phase-body">
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">Full digital KCC LOS with Bhulekh API and auto-disbursal</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">SSPL WhatsApp banking in Hindi activated</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">PACS ERP integration reaches 50%+ of linked PACS</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">V-CIP remote account opening deployed</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">BBPS BOU registration (upgrade from sub-agent)</div></div>
+            <div class="phase-target"><strong>Month 36:</strong> ADEI 60+/100 triggers DM-RFI upgrade review with SSPL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PDC-RFI Roadmap -->
+    <div class="roadmap-content" id="rm-pdc">
+      <div class="roadmap-phases">
+        <div class="phase-card reveal" data-delay="1">
+          <div class="phase-head ph1">
+            <div class="phase-period">Phase 1 · Months 0–6</div>
+            <div class="phase-title">Stabilise the Foundation</div>
+          </div>
+          <div class="phase-body">
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">CBS stabilisation — eliminate offline branches, fix data quality</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">40-hour staff digital literacy curriculum for all branch staff</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">Aadhaar eKYC at HQ branch (minimum viable start)</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">Endpoint security + OTP authentication deployed everywhere</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--earth-l)"></div><div class="phase-item-text">BharatNet/BSNL connectivity confirmed at all branches</div></div>
+            <div class="phase-target"><strong>Month 6:</strong> CBS 100% reliable · HQ eKYC live · All staff CBS-proficient · Security baseline met</div>
+          </div>
+        </div>
+        <div class="phase-card reveal" data-delay="2">
+          <div class="phase-head ph2">
+            <div class="phase-period">Phase 2 · Months 6–18</div>
+            <div class="phase-title">First Digital Products</div>
+          </div>
+          <div class="phase-body">
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">AePS BC agent deployed at district HQ + 2–3 block PACS</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">USSD *99# registration — any feature phone checks balance</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">CBS extract → Excel compliance template → NABARD cycle 45 days</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">RuPay card issuance begins for all new/existing accounts</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:#7B5EA7"></div><div class="phase-item-text">Missed-call IVR banking in Hindi (zero internet needed)</div></div>
+            <div class="phase-target"><strong>Month 18:</strong> 15%+ digital · AePS in district · Compliance 45 days · Cards issued 40%+</div>
+          </div>
+        </div>
+        <div class="phase-card reveal" data-delay="3">
+          <div class="phase-head ph3">
+            <div class="phase-period">Phase 3 · Months 18–36</div>
+            <div class="phase-title">Mobile Banking &amp; NACH</div>
+          </div>
+          <div class="phase-body">
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">SSPL white-label mobile banking app deployed</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">NACH seasonal mandate introduced for KCC repayment collection</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">PACS ERP pilot at 3–5 highest-quality PACS (data-ready)</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">BBPS sub-agent via district BC agent — first commission income</div></div>
+            <div class="phase-item"><div class="phase-bullet" style="background:var(--saffron)"></div><div class="phase-item-text">GreytHR HRMS deployed — payroll fully automated</div></div>
+            <div class="phase-target"><strong>Month 36:</strong> ADEI 30+/100 triggers PD-RFI upgrade &amp; new 3-year roadmap with SSPL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Master Initiative Table -->
+    <div class="tbl-wrap mt-32 reveal">
+      <h3 style="font-family:'Crimson Pro',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:14px;">Master 20-Initiative Timeline (M = Month from project start)</h3>
+      <table class="data-table">
+        <thead><tr><th>Initiative</th><th>PDC Start</th><th>PDC End</th><th>PD Start</th><th>PD End</th><th>DM Start</th><th>DM End</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td class="kpi-name">CBS Stabilisation</td><td class="td-orange">M1</td><td class="td-orange">M18</td><td class="td-purple">M1</td><td class="td-purple">M3</td><td class="td-green">Done</td><td class="td-green">Ongoing</td><td style="color:var(--teal-b);font-weight:700;">★★★★★</td></tr>
+          <tr><td class="kpi-name">Aadhaar eKYC (all branches)</td><td class="td-orange">M3</td><td class="td-orange">M12</td><td class="td-purple">M1</td><td class="td-purple">M4</td><td class="td-green">Done</td><td class="td-green">Extend to PACS</td><td style="color:var(--teal-b);font-weight:700;">★★★★★</td></tr>
+          <tr><td class="kpi-name">Compliance Engine</td><td class="td-orange">M2</td><td class="td-orange">M6</td><td class="td-purple">M1</td><td class="td-purple">M4</td><td class="td-green">M1</td><td class="td-green">M3</td><td style="color:var(--teal-b);font-weight:700;">★★★★★</td></tr>
+          <tr><td class="kpi-name">AePS / BC Agents</td><td class="td-orange">M4</td><td class="td-orange">M12</td><td class="td-purple">M3</td><td class="td-purple">M9</td><td class="td-green">M1</td><td class="td-green">M6</td><td style="color:var(--teal-b);font-weight:700;">★★★★★</td></tr>
+          <tr><td class="kpi-name">USSD *99# / Mobile Banking</td><td class="td-orange">M3</td><td class="td-orange">M6</td><td class="td-purple">M2</td><td class="td-purple">M6</td><td class="td-green">M1</td><td class="td-green">M4</td><td style="color:var(--teal-b);font-weight:700;">★★★★★</td></tr>
+          <tr><td class="kpi-name">NACH Seasonal Mandate</td><td class="td-orange">M6</td><td class="td-orange">M12</td><td class="td-purple">M3</td><td class="td-purple">M8</td><td class="td-green">M1</td><td class="td-green">M3</td><td style="color:var(--teal-b);font-weight:700;">★★★★★</td></tr>
+          <tr><td class="kpi-name">Digital KCC LOS</td><td class="td-orange">M12</td><td class="td-orange">M24</td><td class="td-purple">M6</td><td class="td-purple">M18</td><td class="td-green">M1</td><td class="td-green">M12</td><td style="color:var(--teal-b);font-weight:700;">★★★★★</td></tr>
+          <tr><td class="kpi-name">NPA Early Warning System</td><td class="td-orange">M18</td><td class="td-orange">M30</td><td class="td-purple">M9</td><td class="td-purple">M18</td><td class="td-green">M3</td><td class="td-green">M9</td><td style="color:var(--teal-b);font-weight:700;">★★★★★</td></tr>
+          <tr><td class="kpi-name">MIS / BI Dashboard</td><td class="td-orange">M6</td><td class="td-orange">M12</td><td class="td-purple">M4</td><td class="td-purple">M10</td><td class="td-green">M1</td><td class="td-green">M4</td><td>★★★★</td></tr>
+          <tr><td class="kpi-name">BBPS BOU / Sub-agent</td><td class="td-orange">M6</td><td class="td-orange">M12</td><td class="td-purple">M3</td><td class="td-purple">M8</td><td class="td-green">M1</td><td class="td-green">M4</td><td>★★★★</td></tr>
+          <tr><td class="kpi-name">HRMS / Payroll (SaaS)</td><td class="td-orange">M1</td><td class="td-orange">M2</td><td class="td-purple">M1</td><td class="td-purple">M2</td><td class="td-green">M1</td><td class="td-green">M2</td><td>★★★</td></tr>
+          <tr><td class="kpi-name">Cybersecurity SSPL SOC</td><td class="td-orange">M3</td><td class="td-orange">M9</td><td class="td-purple">M2</td><td class="td-purple">M6</td><td class="td-green">M1</td><td class="td-green">M4</td><td style="color:var(--saffron);font-weight:700;">MANDATORY</td></tr>
+          <tr><td class="kpi-name">PACS ERP Integration</td><td class="td-orange">M18</td><td class="td-orange">M36</td><td class="td-purple">M12</td><td class="td-purple">M30</td><td class="td-green">M6</td><td class="td-green">M18</td><td style="color:var(--teal-b);font-weight:700;">★★★★★</td></tr>
+          <tr><td class="kpi-name">WhatsApp Banking + IVR</td><td class="td-orange">M12</td><td class="td-orange">M18</td><td class="td-purple">M6</td><td class="td-purple">M12</td><td class="td-green">M3</td><td class="td-green">M6</td><td>★★★</td></tr>
+          <tr><td class="kpi-name">Document Management (DMS)</td><td class="td-orange">M9</td><td class="td-orange">M18</td><td class="td-purple">M6</td><td class="td-purple">M12</td><td class="td-green">M3</td><td class="td-green">M9</td><td>★★★</td></tr>
+          <tr><td class="kpi-name">RuPay Card Activation</td><td class="td-orange">M6</td><td class="td-orange">M18</td><td class="td-purple">M3</td><td class="td-purple">M9</td><td class="td-green">M1</td><td class="td-green">M6</td><td>★★★★</td></tr>
+          <tr><td class="kpi-name">V-CIP Remote KYC</td><td>N/R</td><td>N/R</td><td class="td-purple">M18</td><td class="td-purple">M24</td><td class="td-green">M6</td><td class="td-green">M12</td><td>★★★</td></tr>
+          <tr><td class="kpi-name">AI Credit Scoring (NDVI + ML)</td><td>N/R</td><td>N/R</td><td>N/R</td><td>N/R</td><td class="td-green">M12</td><td class="td-green">M30</td><td class="td-green">★★★★★ DM only</td></tr>
+          <tr><td class="kpi-name">FPO Supply Chain Finance</td><td>N/R</td><td>N/R</td><td class="td-purple">M24</td><td class="td-purple">M36</td><td class="td-green">M6</td><td class="td-green">M18</td><td class="td-green">★★★★ DM priority</td></tr>
+          <tr><td class="kpi-name">e-NWR Warehouse Lending</td><td>N/R</td><td>N/R</td><td>N/R</td><td>N/R</td><td class="td-green">M18</td><td class="td-green">M36</td><td class="td-green">★★★ DM grain-belt</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:11px;color:rgba(255,255,255,.35);margin-top:8px;font-family:'JetBrains Mono',monospace;">N/R = Not Recommended for this category at this time</p>
+    </div>
+
+    <!-- SSPL Advisory Calendar -->
+    <div class="mt-40 reveal">
+      <h3 style="font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;">📅 SSPL Annual Advisory Calendar</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;">
+        <div class="dark-card" style="border-left:3px solid var(--teal-b);">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--teal-b);margin-bottom:6px;">MONTHS 1–2</div>
+          <div style="font-size:13px;color:var(--white);font-weight:600;margin-bottom:4px;">Baseline Diagnostic</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.5);">GBPEM scoring · infrastructure audit · staff capability assessment · ADEI baseline score</div>
+        </div>
+        <div class="dark-card" style="border-left:3px solid var(--gold-l);">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold-l);margin-bottom:6px;">MONTH 3</div>
+          <div style="font-size:13px;color:var(--white);font-weight:600;margin-bottom:4px;">Roadmap Delivery</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.5);">Product recommendation report to DCCB board · 3-year roadmap signed</div>
+        </div>
+        <div class="dark-card" style="border-left:3px solid var(--saffron);">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--saffron);margin-bottom:6px;">MONTHS 4–6</div>
+          <div style="font-size:13px;color:var(--white);font-weight:600;margin-bottom:4px;">Phase 1 Implementation</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.5);">Vendor coordination · staff training · quick-win deployments · KPI baseline</div>
+        </div>
+        <div class="dark-card" style="border-left:3px solid var(--earth-l);">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--earth-l);margin-bottom:6px;">MONTH 12</div>
+          <div style="font-size:13px;color:var(--white);font-weight:600;margin-bottom:4px;">ADEI Score Published</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.5);">Annual Digital Effectiveness Index · peer benchmarking report · NABARD visibility</div>
+        </div>
+        <div class="dark-card" style="border-left:3px solid #7B5EA7;">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#7B5EA7;margin-bottom:6px;">MONTH 18</div>
+          <div style="font-size:13px;color:var(--white);font-weight:600;margin-bottom:4px;">Mid-Term Review</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.5);">Category upgrade assessment (PDC→PD? PD→DM?) · revised Phase 3 targets</div>
+        </div>
+        <div class="dark-card" style="border-left:3px solid var(--teal-b);">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--teal-b);margin-bottom:6px;">MONTH 36</div>
+          <div style="font-size:13px;color:var(--white);font-weight:600;margin-bottom:4px;">3-Year Completion</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.5);">Final performance report · new roadmap initiated · NABARD OSS digital audit</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SSPL COST MODEL SECTION
+════════════════════════════════════════════════════════ -->
+<section id="sspl" class="section">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-eyelet">Section 1.3 · SSPL Shared Services</div>
+      <h2 class="sec-title">SSPL Shared Model — <span class="a">88% Cost Reduction</span></h2>
+      <div class="sec-rule"></div>
+      <p class="sec-desc">One SSPL-hosted product serving all 352 DCCBs vs 352 individual licenses. The cooperative advantage made digital. Every rupee saved by sharing is a rupee available for farmer credit.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;" class="reveal">
+      <!-- Cost bars -->
+      <div>
+        <h3 style="font-family:'Crimson Pro',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;">Standalone vs SSPL Shared — Annual Cost per DCCB</h3>
+        <div id="costBarsContainer">
+          <!-- CBS Hosting -->
+          <div style="margin-bottom:18px;">
+            <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:var(--text1);margin-bottom:6px;"><span>CBS Hosting</span><span style="color:var(--text3);">₹8–15L standalone vs ₹2–4L SSPL</span></div>
+            <div style="background:var(--sand);border-radius:4px;height:10px;overflow:hidden;margin-bottom:3px;"><div class="cost-bar-standalone" style="height:10px;background:linear-gradient(90deg,#C03030,#E05050);border-radius:4px;width:0%;transition:width 1.4s ease;" data-w="75"></div></div>
+            <div style="background:var(--sand);border-radius:4px;height:10px;overflow:hidden;"><div class="cost-bar-sspl" style="height:10px;background:linear-gradient(90deg,var(--teal),var(--teal-b));border-radius:4px;width:0%;transition:width 1.6s ease .2s;" data-w="22"></div></div>
+          </div>
+          <!-- WhatsApp API -->
+          <div style="margin-bottom:18px;">
+            <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:var(--text1);margin-bottom:6px;"><span>WhatsApp Banking API</span><span style="color:var(--text3);">₹5–15L vs ₹50K</span></div>
+            <div style="background:var(--sand);border-radius:4px;height:10px;overflow:hidden;margin-bottom:3px;"><div class="cost-bar-standalone" style="height:10px;background:linear-gradient(90deg,#C03030,#E05050);border-radius:4px;width:0%;transition:width 1.4s ease;" data-w="92"></div></div>
+            <div style="background:var(--sand);border-radius:4px;height:10px;overflow:hidden;"><div class="cost-bar-sspl" style="height:10px;background:linear-gradient(90deg,var(--teal),var(--teal-b));border-radius:4px;width:0%;transition:width 1.6s ease .2s;" data-w="8"></div></div>
+          </div>
+          <!-- Cybersecurity SOC -->
+          <div style="margin-bottom:18px;">
+            <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:var(--text1);margin-bottom:6px;"><span>Cybersecurity SOC</span><span style="color:var(--text3);">₹50–100L vs ₹3–8L</span></div>
+            <div style="background:var(--sand);border-radius:4px;height:10px;overflow:hidden;margin-bottom:3px;"><div class="cost-bar-standalone" style="height:10px;background:linear-gradient(90deg,#C03030,#E05050);border-radius:4px;width:0%;transition:width 1.4s ease;" data-w="95"></div></div>
+            <div style="background:var(--sand);border-radius:4px;height:10px;overflow:hidden;"><div class="cost-bar-sspl" style="height:10px;background:linear-gradient(90deg,var(--teal),var(--teal-b));border-radius:4px;width:0%;transition:width 1.6s ease .2s;" data-w="7"></div></div>
+          </div>
+          <!-- AML Engine -->
+          <div style="margin-bottom:18px;">
+            <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:var(--text1);margin-bottom:6px;"><span>AML Compliance Engine</span><span style="color:var(--text3);">₹10–30L vs ₹1–3L</span></div>
+            <div style="background:var(--sand);border-radius:4px;height:10px;overflow:hidden;margin-bottom:3px;"><div class="cost-bar-standalone" style="height:10px;background:linear-gradient(90deg,#C03030,#E05050);border-radius:4px;width:0%;transition:width 1.4s ease;" data-w="90"></div></div>
+            <div style="background:var(--sand);border-radius:4px;height:10px;overflow:hidden;"><div class="cost-bar-sspl" style="height:10px;background:linear-gradient(90deg,var(--teal),var(--teal-b));border-radius:4px;width:0%;transition:width 1.6s ease .2s;" data-w="10"></div></div>
+          </div>
+          <!-- Regulatory Engine -->
+          <div style="margin-bottom:18px;">
+            <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:var(--text1);margin-bottom:6px;"><span>Regulatory Reporting Engine</span><span style="color:var(--text3);">₹5–12L vs ₹1–2L</span></div>
+            <div style="background:var(--sand);border-radius:4px;height:10px;overflow:hidden;margin-bottom:3px;"><div class="cost-bar-standalone" style="height:10px;background:linear-gradient(90deg,#C03030,#E05050);border-radius:4px;width:0%;transition:width 1.4s ease;" data-w="83"></div></div>
+            <div style="background:var(--sand);border-radius:4px;height:10px;overflow:hidden;"><div class="cost-bar-sspl" style="height:10px;background:linear-gradient(90deg,var(--teal),var(--teal-b));border-radius:4px;width:0%;transition:width 1.6s ease .2s;" data-w="14"></div></div>
+          </div>
+          <!-- MIS -->
+          <div style="margin-bottom:8px;">
+            <div style="display:flex;justify-content:space-between;font-size:12px;font-weight:600;color:var(--text1);margin-bottom:6px;"><span>MIS / BI Analytics Platform</span><span style="color:var(--text3);">₹3–8L vs ₹50K–1L</span></div>
+            <div style="background:var(--sand);border-radius:4px;height:10px;overflow:hidden;margin-bottom:3px;"><div class="cost-bar-standalone" style="height:10px;background:linear-gradient(90deg,#C03030,#E05050);border-radius:4px;width:0%;transition:width 1.4s ease;" data-w="87"></div></div>
+            <div style="background:var(--sand);border-radius:4px;height:10px;overflow:hidden;"><div class="cost-bar-sspl" style="height:10px;background:linear-gradient(90deg,var(--teal),var(--teal-b));border-radius:4px;width:0%;transition:width 1.6s ease .2s;" data-w="12"></div></div>
+          </div>
+          <div style="display:flex;gap:16px;margin-top:10px;">
+            <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text3);"><div style="width:10px;height:10px;border-radius:2px;background:#C03030;"></div>Standalone</div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text3);"><div style="width:10px;height:10px;border-radius:2px;background:var(--teal-b);"></div>SSPL Shared</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summary cards -->
+      <div>
+        <div class="card" style="border-top:4px solid var(--teal);margin-bottom:16px;">
+          <div style="font-family:'Crimson Pro',serif;font-size:48px;font-weight:700;color:var(--teal);text-align:center;line-height:1;">88%</div>
+          <div style="text-align:center;font-size:13px;color:var(--text2);margin-bottom:14px;">Average cost reduction via SSPL shared model</div>
+          <div style="background:var(--sand);border-radius:8px;padding:14px;">
+            <div style="display:flex;justify-content:space-between;font-size:12.5px;padding:5px 0;border-bottom:1px solid var(--border-l);">
+              <span style="color:var(--text2);">Standalone TOTAL annual</span>
+              <span style="font-weight:700;color:#C03030;">₹84–185 lakhs</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:12.5px;padding:5px 0;">
+              <span style="color:var(--text2);">SSPL Shared TOTAL annual</span>
+              <span style="font-weight:700;color:var(--teal);">₹8–21 lakhs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="border-top:4px solid var(--gold);">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:2px;margin-bottom:12px;">SSPL SERVICE CATALOGUE — STATUS 2025</div>
+          <div style="font-size:12.5px;line-height:2;">
+            <div><span style="color:var(--earth-l);">✅</span> Regulatory Reporting Engine (ENSURE) — <strong>Active</strong></div>
+            <div><span style="color:var(--earth-l);">✅</span> AML Compliance Engine — <strong>Advanced Dev</strong></div>
+            <div><span style="color:var(--gold);">🔄</span> CBS SaaS Hosting — <em>In Development (2026)</em></div>
+            <div><span style="color:var(--gold);">🔄</span> WhatsApp Banking Shared API — <em>Dev (2025–26)</em></div>
+            <div><span style="color:var(--gold);">🔄</span> Cybersecurity SOC Shared — <em>Dev (2025–26)</em></div>
+            <div><span style="color:var(--gold);">🔄</span> Digital KCC LOS Platform — <em>Pilot (select states)</em></div>
+            <div><span style="color:var(--saffron);">🔜</span> AI Credit Scoring Engine — <em>R&D (2026–27)</em></div>
+            <div><span style="color:var(--gold);">🔄</span> MIS / BI Analytics Platform — <em>Dev (2025–26)</em></div>
+            <div><span style="color:var(--saffron);">🔜</span> HRMS Shared Service — <em>Planned 2026</em></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- CBS Vendor Comparison -->
-    <div class="mt-48 reveal">
-      <div class="sec-eyelet">Annexure B</div>
-      <h2 class="sec-title" style="font-family:'Crimson Pro',serif;font-size:28px;margin-bottom:6px;">CBS Vendor Comparison</h2>
-      <div class="sec-rule"></div>
-      <div class="tbl-wrap mt-16">
+    <div class="mt-40 reveal">
+      <h3 style="font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:var(--navy);margin-bottom:16px;">CBS Vendor Comparison for UP DCCBs</h3>
+      <div class="tbl-wrap">
         <table class="data-table">
-          <thead><tr><th>Vendor</th><th>Product</th><th>Target Segment</th><th>Pricing (₹)</th><th>Key Features</th><th>PACS ERP</th><th>SSPL Compatible</th></tr></thead>
+          <thead><tr><th>Vendor</th><th>Product</th><th>Segment</th><th>Cost (₹)</th><th>Key Features</th><th>PACS ERP</th><th>SSPL</th></tr></thead>
           <tbody>
-            <tr><td class="kpi-name">C-Edge (TCS+SBI JV)</td><td>C-Edge CBS</td><td>RRBs + Cooperative</td><td>₹50–150L one-time; ₹8–20L AM</td><td>Full cooperative CBS; UPI; AePS; card mgmt; NABARD returns; share capital</td><td class="td-green">Yes — roadmap</td><td class="td-green">Yes</td></tr>
-            <tr><td class="kpi-name">TrustBankCBS</td><td>TrustBankCBS</td><td>Cooperative + Small banks</td><td>₹15–40L; ₹3–6L AM</td><td>KYC; LOS; mobile banking; AML; RBI returns; share capital management</td><td class="td-purple">In development</td><td class="td-purple">Planned</td></tr>
-            <tr><td class="kpi-name">Virmati Software</td><td>Virmati CBS</td><td>NBFC + Cooperative</td><td>₹20–50L; ₹4–8L AM</td><td>BFSI + ERP; API layer; Ahmedabad-based; Fintech-ready</td><td class="td-orange">Partial</td><td class="td-orange">Planned</td></tr>
-            <tr><td class="kpi-name">RB Tech Services</td><td>RB CBS</td><td>NBFC + Cooperative (100+ clients)</td><td>₹15–35L; ₹3–5L AM</td><td>Mobile banking; RBI compliance; 100+ cooperative bank clients across India</td><td class="td-orange">Partial</td><td class="td-orange">Under eval</td></tr>
-            <tr><td class="kpi-name">Custodian / LISTSPL</td><td>Custodian CBS</td><td>Maharashtra + Karnataka</td><td>₹10–30L; ₹2–5L AM</td><td>Share capital; PACS sub-accounting; regional language support</td><td class="td-green">Yes (regional)</td><td class="td-orange">Under eval</td></tr>
-            <tr><td class="kpi-name">Autobank / TM Systems</td><td>Autobank CBS</td><td>125+ cooperative banks, 25+ years</td><td>₹10–25L; ₹2–4L AM</td><td>Proven cooperative track record; full GL; NABARD returns; mobile banking</td><td class="td-orange">Partial</td><td class="td-orange">Under eval</td></tr>
-            <tr><td class="kpi-name">TCS BaNCS (cooperative)</td><td>BaNCS</td><td>Large Cooperative (&gt;₹2,000 Cr)</td><td>₹2–5 Cr+; ₹30–50L AM</td><td>Enterprise-grade; full API; AI-ready; SBI-proven at 140M accounts</td><td class="td-green">Yes (enterprise)</td><td class="td-green">Yes</td></tr>
-            <tr><td class="kpi-name">SSPL CBS SaaS (planned)</td><td>SSPL Hosted</td><td>All DCCB categories</td><td>₹5–10L/year (estimated)</td><td>Cooperative-specific; shared infrastructure; SSPL-native integration</td><td class="td-green">Yes (native)</td><td class="td-green">Native</td></tr>
+            <tr><td class="kpi-name">C-Edge (TCS+SBI JV)</td><td>C-Edge CBS</td><td>RRBs + Cooperative</td><td>₹50–150L + ₹8–20L AM</td><td>Full cooperative CBS; UPI; AePS; card mgmt; NABARD returns</td><td class="td-green">Yes — roadmap</td><td class="td-green">Yes</td></tr>
+            <tr><td class="kpi-name">TrustBankCBS</td><td>TrustBankCBS</td><td>Cooperative + Small</td><td>₹15–40L + ₹3–6L AM</td><td>KYC; LOS; mobile banking; AML; share capital management</td><td class="td-purple">In dev</td><td class="td-purple">Planned</td></tr>
+            <tr><td class="kpi-name">Virmati Software</td><td>Virmati CBS</td><td>NBFC + Cooperative</td><td>₹20–50L + ₹4–8L AM</td><td>BFSI + ERP; API layer; Fintech-ready; Ahmedabad-based</td><td class="td-orange">Partial</td><td class="td-orange">Planned</td></tr>
+            <tr><td class="kpi-name">RB Tech Services</td><td>RB CBS</td><td>100+ cooperative clients</td><td>₹15–35L + ₹3–5L AM</td><td>Mobile banking; RBI compliance; proven cooperative track</td><td class="td-orange">Partial</td><td class="td-orange">Under eval</td></tr>
+            <tr><td class="kpi-name">Autobank / TM Systems</td><td>Autobank CBS</td><td>125+ banks, 25+ years</td><td>₹10–25L + ₹2–4L AM</td><td>Full GL; NABARD returns; mobile; proven cooperative record</td><td class="td-orange">Partial</td><td class="td-orange">Under eval</td></tr>
+            <tr><td class="kpi-name">TCS BaNCS (cooperative)</td><td>BaNCS</td><td>Large Cooperative (&gt;₹2000Cr)</td><td>₹2–5 Cr+ + ₹30–50L AM</td><td>Enterprise; full API; AI-ready; SBI-proven 140M accounts</td><td class="td-green">Yes (enterprise)</td><td class="td-green">Yes</td></tr>
+            <tr><td class="kpi-name">SSPL CBS SaaS (planned)</td><td>SSPL Hosted</td><td>All DCCB categories</td><td>₹5–10L/year (est.)</td><td>Cooperative-specific; shared infra; SSPL-native integration</td><td class="td-green">Yes (native)</td><td class="td-green">Native</td></tr>
           </tbody>
         </table>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- MVDS Summary -->
+<!-- ════════════════════════════════════════════════════════
+     REGIONAL HEAT MAP SECTION
+════════════════════════════════════════════════════════ -->
+<section id="regions" class="section section-alt">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-eyelet">Section 6.3 · Regional Analysis</div>
+      <h2 class="sec-title">Regional <span class="a">Digital Maturity</span> Heat Map</h2>
+      <div class="sec-rule"></div>
+      <p class="sec-desc">Three agro-climatic zones with distinct digital infrastructure, smartphone penetration, and SSPL implementation strategy. UP spans Zones 2 and 3.</p>
+    </div>
+
+    <div class="region-grid mt-24">
+      <div class="region-card reveal" data-delay="1">
+        <div class="region-zone rz1">Zone 1 — Progressive Digital Belt</div>
+        <div class="region-name">Western + Southern India</div>
+        <div class="region-states">Maharashtra, Gujarat, Karnataka (southern), AP, Telangana, Punjab, Haryana</div>
+        <div class="region-stat"><span>DM-RFI concentration</span><span class="region-stat-val">~70% of DM-RFIs</span></div>
+        <div class="region-stat"><span>Smartphone penetration</span><span class="region-stat-val">65–80%</span></div>
+        <div class="region-stat"><span>4G village coverage</span><span class="region-stat-val">&gt;90%</span></div>
+        <div class="region-stat"><span>SSPL strategy</span><span class="region-stat-val" style="color:var(--earth-l);">FULL AI STACK</span></div>
+        <div class="region-highlight rz1-h">API enablement · AI credit scoring · FPO supply chain finance · SSPL SOC connectivity · 100% PACS ERP</div>
+      </div>
+      <div class="region-card reveal" data-delay="2">
+        <div class="region-zone rz2">Zone 2 — Transitional Digital Belt</div>
+        <div class="region-name">Central + Eastern India (incl. UP)</div>
+        <div class="region-states">Uttar Pradesh, MP, Rajasthan, Bihar (western), Tamil Nadu, Kerala, West Bengal, Himachal, Uttarakhand</div>
+        <div class="region-stat"><span>PD-RFI concentration</span><span class="region-stat-val">~65% of PD-RFIs</span></div>
+        <div class="region-stat"><span>Smartphone penetration</span><span class="region-stat-val">40–65%</span></div>
+        <div class="region-stat"><span>4G village coverage</span><span class="region-stat-val">60–80%</span></div>
+        <div class="region-stat"><span>SSPL strategy</span><span class="region-stat-val" style="color:#4A3090;">COMPLETION</span></div>
+        <div class="region-highlight rz2-h">CBS completion · NACH seasonal mandate · BC network expansion · BBPS BOU registration · MIS dashboards</div>
+      </div>
+      <div class="region-card reveal" data-delay="3">
+        <div class="region-zone rz3">Zone 3 — Digital Frontier</div>
+        <div class="region-name">Northeast + Tribal India</div>
+        <div class="region-states">Bihar (tribal), Jharkhand, Odisha tribal, Chhattisgarh, Northeast 8 states, UP eastern tribal blocks</div>
+        <div class="region-stat"><span>PDC-RFI concentration</span><span class="region-stat-val">~75% of PDC-RFIs</span></div>
+        <div class="region-stat"><span>Smartphone penetration</span><span class="region-stat-val">15–40%</span></div>
+        <div class="region-stat"><span>4G village coverage</span><span class="region-stat-val">30–60%</span></div>
+        <div class="region-stat"><span>SSPL strategy</span><span class="region-stat-val" style="color:var(--saffron);">FOUNDATION</span></div>
+        <div class="region-highlight rz3-h">Phygital-first · AePS + BC only · CBS stabilisation · BharatNet advocacy with DOT/BSNL</div>
+      </div>
+    </div>
+
+    <!-- State-level UP detail -->
+    <div class="callout warn mt-32 reveal">
+      <div class="callout-text">
+        <strong>Uttar Pradesh — 50 DCCBs Across Both Zones:</strong>
+        Western UP (Agra, Mathura, Aligarh, Meerut belt) sits in Zone 2 — PD-RFI with a clear completion roadmap and rising smartphone penetration.
+        Eastern UP (Varanasi, Ballia, Ghazipur, Azamgarh sugarcane belt) has Zone 2 mainstream districts but Zone 3 pockets in tribal blocks.
+        <strong>SSPL UP priority:</strong> PACS ERP data quality across all 75 districts · Seasonal NACH for kharif + rabi harvest cycles ·
+        BC network activation in underserved blocks · Compliance automation as the immediate highest-ROI first intervention for all 50 DCCBs.
+      </div>
+    </div>
+
+    <!-- State heat-map table -->
+    <div class="tbl-wrap mt-32 reveal">
+      <h3 style="font-family:'Crimson Pro',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:14px;">State-Level DCCB Digital Maturity Overview</h3>
+      <table class="data-table">
+        <thead><tr><th>State</th><th>DCCBs</th><th>Est. DM-RFI</th><th>Est. PD-RFI</th><th>Est. PDC-RFI</th><th>Key Gap</th><th>SSPL Priority</th><th>Primary CBS</th></tr></thead>
+        <tbody>
+          <tr><td class="kpi-name">Uttar Pradesh</td><td>50</td><td class="td-green">4</td><td class="td-purple">32</td><td class="td-orange">14</td><td>CRAR/SLR manual; PACS ERP; BC network</td><td style="color:var(--teal);font-weight:700;">HIGHEST (largest)</td><td>RB Tech / C-Edge</td></tr>
+          <tr><td class="kpi-name">Maharashtra</td><td>31</td><td class="td-green">12</td><td class="td-purple">16</td><td class="td-orange">3</td><td>PACS ERP completion; AI credit scoring</td><td class="td-green">HIGHEST — AI pilots</td><td>Custodian / C-Edge</td></tr>
+          <tr><td class="kpi-name">Gujarat</td><td>18</td><td class="td-green">8</td><td class="td-purple">8</td><td class="td-orange">2</td><td>BC network density; FPO finance</td><td class="td-green">HIGH</td><td>C-Edge / Virmati</td></tr>
+          <tr><td class="kpi-name">Madhya Pradesh</td><td>38</td><td class="td-green">4</td><td class="td-purple">24</td><td class="td-orange">10</td><td>Tribal CBS stabilisation; eKYC</td><td>HIGH</td><td>RB Tech / Autobank</td></tr>
+          <tr><td class="kpi-name">Rajasthan</td><td>33</td><td class="td-green">4</td><td class="td-purple">20</td><td class="td-orange">9</td><td>Connectivity; NACH seasonal; BC desert coverage</td><td>HIGH-MEDIUM</td><td>RB Tech / Autobank</td></tr>
+          <tr><td class="kpi-name">Bihar</td><td>35</td><td class="td-green">2</td><td class="td-purple">20</td><td class="td-orange">13</td><td>CBS stabilisation; staff training; connectivity</td><td class="td-orange">HIGH (large gap)</td><td>RB Tech / Autobank</td></tr>
+          <tr><td class="kpi-name">Punjab</td><td>20</td><td class="td-green">8</td><td class="td-purple">10</td><td class="td-orange">2</td><td>Advanced digital; AI scoring ready</td><td class="td-green">HIGH (advanced)</td><td>C-Edge / Finacle</td></tr>
+          <tr><td class="kpi-name">Karnataka</td><td>30</td><td class="td-green">8</td><td class="td-purple">16</td><td class="td-orange">6</td><td>Tribal DCCB foundation; PACS ERP</td><td>HIGH</td><td>C-Edge / Custodian</td></tr>
+          <tr><td class="kpi-name">Northeast (8 states)</td><td>22</td><td class="td-green">1</td><td class="td-purple">8</td><td class="td-orange">13</td><td>Foundation CBS; connectivity; phygital-first</td><td class="td-orange">CRITICAL PDC focus</td><td>RB Tech / Autobank</td></tr>
+          <tr><td class="kpi-name" style="font-weight:800;">INDIA TOTAL</td><td style="font-weight:700;">352</td><td class="td-green" style="font-weight:700;">55–70</td><td class="td-purple" style="font-weight:700;">195–210</td><td class="td-orange" style="font-weight:700;">85–90</td><td>PACS ERP; AI scoring; BC activation; compliance auto</td><td>Phased by category</td><td>Multiple vendors</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     ANNEXURES — COMPLETE WITH PROPER GLOSSARY
+════════════════════════════════════════════════════════ -->
+<section id="annexures" class="section section-earth">
+  <div class="container">
+    <div class="part-banner reveal" style="margin:0 -40px 48px;padding-left:40px;padding-right:40px;">
+      <div class="pb-inner">
+        <div class="pb-eyelet">Annexures A–E</div>
+        <div class="pb-title">Reference Materials — <span class="accent">Glossary · CBS Vendors · SSPL Catalogue · Regional Data · GBPEM Worksheet</span></div>
+        <p class="pb-sub">All terminology, vendor data, and assessment tools from the full NABARD–SSPL framework.</p>
+      </div>
+    </div>
+
+    <!-- Glossary -->
+    <div class="sec-header reveal">
+      <div class="sec-eyelet">Annexure A</div>
+      <h2 class="sec-title">Glossary of <span class="a">Key Terms</span> (30 Definitions)</h2>
+      <div class="sec-rule"></div>
+      <p class="sec-desc">Click any term to expand the definition. All terms contextualised for UP DCCB operations.</p>
+    </div>
+
+    <div class="glossary-grid mt-16 reveal">
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">AePS</span><span class="glo-expand">+</span></div><div class="glo-def">Aadhaar-enabled Payment System — NPCI biometric cash transaction. Works without smartphone, PIN, or literacy. The most rural-appropriate digital payment for Segment C UP clients. BC agent + micro-ATM + fingerprint = doorstep banking.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">ADEI</span><span class="glo-expand">+</span></div><div class="glo-def">Annual Digital Effectiveness Index — SSPL/NABARD composite digital maturity score (0–100) per DCCB. PDC-RFI: below 30. PD-RFI: 30–60. DM-RFI: above 60. Published annually for peer benchmarking. Category upgrade triggered at threshold crossing.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">BBPS</span><span class="glo-expand">+</span></div><div class="glo-def">Bharat Bill Payment System — NPCI interoperable utility bill collection. Commission ₹3–5 per transaction. A PACS serving 3,000 UP households with 2 bills/month earns ₹24,000/month — a self-sustaining incentive for PACS digital adoption without subsidy.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">BC</span><span class="glo-expand">+</span></div><div class="glo-def">Business Correspondent — DCCB-appointed doorstep banking agent. Monthly income (active BC): ₹10,950–18,450. Device: smartphone + micro-ATM (₹12,000–15,000). Services: AePS cash-out, BBPS bill payment, account opening, KCC application assistance.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">CBS</span><span class="glo-expand">+</span></div><div class="glo-def">Core Banking Solution — centralised software managing all bank operations. All cooperative banks CBS-compliant (RBI mandate, March 2025). Most UP DCCBs use only 40–60% of CBS capability. SSPL CBS sprint activates unused modules at zero new procurement cost.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">CRAR</span><span class="glo-expand">+</span></div><div class="glo-def">Capital to Risk-weighted Assets Ratio = (T1+T2)/RWA × 100. Minimum 9% for cooperative banks (RBI). Currently 40+ person-hours of manual Excel computation per cycle in most UP DCCBs. Compliance engine automates this in 2 hours at DM-RFI level.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">DM-RFI</span><span class="glo-expand">+</span></div><div class="glo-def">Digitally Mature RFI — Category 1. ~4 UP DCCBs nationally. 55–70 nationally. All 10 CBS/digital criteria met. SSPL posture: AI integration, satellite NDVI, FPO supply chain finance, SSPL SOC. ADEI target: 75+ by Year 3.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">ECL</span><span class="glo-expand">+</span></div><div class="glo-def">Expected Credit Loss (IFRS 9) = PD × LGD × EAD. PD: Probability of Default. LGD: Loss Given Default (~40–60% for secured agri loans). EAD: Exposure at Default (outstanding balance). Foundation of the NPA EWS provisioning model.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">e-NWR</span><span class="glo-expand">+</span></div><div class="glo-def">Electronic Negotiable Warehouse Receipt — WDRA digital receipt enabling post-harvest collateral lending. UP farmer deposits wheat/rice → e-NWR issued → DCCB lends 70–80% of market value → farmer sells at higher post-harvest price → repays. Eliminates distress selling.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">EWS</span><span class="glo-expand">+</span></div><div class="glo-def">Early Warning System — automated NPA flagging. Accounts at Orange stage recover at 78% vs 42% at Red/NPA. 20–25% NPA formation reduction target (SSPL). ECL = PD × LGD × EAD is the mathematical basis for DM-RFI ML scoring.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">FPO</span><span class="glo-expand">+</span></div><div class="glo-def">Farmer Producer Organisation — legally registered farmer collective. Highest-ROI client segment for DCCBs. FPO management has digital literacy; working capital loans secured by commodity receivables. NABARD RuralTech CoLab (GFF 2025) co-creating FPO digital lending models.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">GBPEM</span><span class="glo-expand">+</span></div><div class="glo-def">Generic Bank Product Effectiveness Model — 5-axis scoring framework (PMS·RAS·ICI·FIQ·CVDS). Products &lt;15/25 should not be independently deployed. Products 18–25 are the priority set. Prevents ₹4,000 crore YONO-equivalent mistakes in cooperative banking.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">KCC</span><span class="glo-expand">+</span></div><div class="glo-def">Kisan Credit Card — revolving crop credit for Indian farmers. Anchor product of every DCCB. Current UP DCCB TAT: 14–42 days. Digital LOS target: 2–5 days. 8–12% NPA rate currently; AI scoring targets 3–5%. PMFBY auto-enrolment at KCC disbursal is the key insurance linkage.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">LOS</span><span class="glo-expand">+</span></div><div class="glo-def">Loan Origination System — digital workflow from application to disbursal. Integrates: Aadhaar eKYC → Bhulekh land records → PM Kisan DB → CIBIL → satellite NDVI → weather API → PMFBY auto-enrol. DM-RFI: fully automated. PD-RFI: hybrid. PDC-RFI: scan + digital disbursal.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">NACH</span><span class="glo-expand">+</span></div><div class="glo-def">National Automated Clearing House — NPCI bulk payment for EMI/mandate debit. Critical UP adaptation: seasonal variable-date mandate for kharif (Oct–Nov) and rabi (Apr–May) harvest cycles. Standard monthly NACH fails for agricultural repayment patterns. ₹2–5 per collection vs ₹50–80 field officer visit.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">NABARD</span><span class="glo-expand">+</span></div><div class="glo-def">National Bank for Agriculture and Rural Development — apex development bank for rural India. ₹42,000+ crore infused into cooperative banks FY24–25. NABARD Turn Around Plan (TAP): covers 96 weak RCBs from April 2025. Operates OSS for cooperative bank monitoring.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">NDVI</span><span class="glo-expand">+</span></div><div class="glo-def">Normalised Difference Vegetation Index — ISRO NRSC satellite crop health metric. EWS: drop &gt;15% below seasonal average → Orange alert. Credit scoring: NDVI + weather API combined to produce agri PD estimate. Key input in DM-RFI AI credit scoring for UP wheat and sugarcane crops.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">NPA</span><span class="glo-expand">+</span></div><div class="glo-def">Non-Performing Asset — loan with principal/interest unpaid for 90+ days. UP DCCB KCC NPA rate: 8–12%. DM-RFI target: 4% (AI scoring + EWS). PD-RFI target: 6% (rules-based EWS). ECL = PD × LGD × EAD computes the provisioning requirement per account.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">PACS</span><span class="glo-expand">+</span></div><div class="glo-def">Primary Agricultural Credit Society — village-level cooperative, last-mile credit delivery. 63,000 functional PACS nationally. In UP, PACS data arrives at DCCBs on paper registers. Digitalising PACS = unlocking AI for DCCBs. National ERP project linking 63,000 PACS to DCCBs and NABARD.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">PD-RFI</span><span class="glo-expand">+</span></div><div class="glo-def">Partially Digitalized RFI — Category 2. ~32 UP DCCBs. 195–210 nationally. CBS live but underutilised. SSPL posture: Completion and Consolidation. Priority: PACS data quality, seasonal NACH, BC micro-ATM, semi-automated compliance. ADEI target: 60+ by Year 3.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">PDC-RFI</span><span class="glo-expand">+</span></div><div class="glo-def">Pre-Digital Commencing RFI — Category 3. ~14 UP DCCBs. 85–90 nationally. CBS partial or batch mode. SSPL posture: Foundation First. CBS stabilisation → staff literacy → Aadhaar eKYC → AePS → basic compliance. ADEI target: 30+ by Year 3 (triggers PD-RFI upgrade).</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">PMFBY</span><span class="glo-expand">+</span></div><div class="glo-def">Pradhan Mantri Fasal Bima Yojana — crop insurance. Government subsidy 85%+ of premium. Farmer pays 1.5–2% of sum insured. DM-RFI auto-enrolment: 98%+ at KCC disbursal. Current UP DCCB rate: &lt;40%. Closing this gap is one of the highest-impact and easiest wins available.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">RFI</span><span class="glo-expand">+</span></div><div class="glo-def">Rural Financial Institution — the DCCB category designation in this framework. Three categories: DM-RFI (~4 UP DCCBs), PD-RFI (~32 UP DCCBs), PDC-RFI (~14 UP DCCBs). Category determines product roadmap, SSPL advisory posture, and ADEI targets.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">SLR</span><span class="glo-expand">+</span></div><div class="glo-def">Statutory Liquidity Ratio = SLR Securities / NDTL × 100. Minimum 18.00% (RBI, 2024). Compliance engine triggers alert at 18.50% — before breaching the floor. Currently computed manually in Excel in most UP DCCBs. 10 hours manual → real-time automated (DM-RFI) = 99% reduction.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">SSPL</span><span class="glo-expand">+</span></div><div class="glo-def">Sahakar Sarathi Pvt Ltd — NABARD's shared services entity backed by Ministry of Cooperation + NCDC. Targets 130 million cooperative banking customers. ₹1,500 crore annual savings from Year 5. Serves all 352 DCCBs. Delivers 88% cost reduction through shared infrastructure vs standalone procurement.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">UPI</span><span class="glo-expand">+</span></div><div class="glo-def">Unified Payments Interface — NPCI real-time payment. 10 billion+ monthly transactions (2024). UP rural client pathway: USSD *99# (feature phone, no data) → AePS (biometric only) → UPI QR at PACS → UPI 123PAY (feature-phone UPI) → full mobile UPI app. Each step serves a different segment.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">USSD</span><span class="glo-expand">+</span></div><div class="glo-def">Unstructured Supplementary Service Data — *99# banking on any GSM phone without internet. Zero data cost. Balance inquiry, mini-statement, fund transfer. First digital product for all PDC-RFI DCCBs. Deployable in 30–45 days at ₹50K–1 lakh setup. Serves 100% of UP's feature-phone users.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">V-CIP</span><span class="glo-expand">+</span></div><div class="glo-def">Video Customer Identification Process — RBI-approved remote KYC via video call. Enables rural account opening without branch visit. Critical for UP migrant workers (city worker opens home-DCCB account remotely for family remittance). Traditional KYC: 2–5 days. V-CIP: 5–10 minutes. DM-RFI initially.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">VAPT</span><span class="glo-expand">+</span></div><div class="glo-def">Vulnerability Assessment and Penetration Testing — RBI-mandated annual security testing for all banks. Individual DCCB cost: ₹1–3 lakhs/year. SSPL empanels approved agencies and coordinates VAPT for all cooperative banks at shared cost. Non-compliance creates regulatory risk.</div></div>
+      <div class="glo-item"><div class="glo-term" onclick="toggleGlo(this)"><span class="glo-abbr">WDRA</span><span class="glo-expand">+</span></div><div class="glo-def">Warehousing Development and Regulatory Authority — operates the e-NWR (electronic Negotiable Warehouse Receipt) registry. HDFC, ICICI, Axis Bank offer warehouse receipt finance against e-NWRs. For UP grain-belt DCCBs (wheat, rice, pulses): high-priority product enabling post-harvest lending without distress selling.</div></div>
+    </div>
+
+    <!-- MVDS Quick Reference -->
     <div class="mt-48 reveal">
       <div class="sec-eyelet">Annexure E — Quick Reference</div>
-      <h2 class="sec-title" style="font-family:'Crimson Pro',serif;font-size:28px;margin-bottom:6px;">Minimum Viable Digital Stack by RFI Category</h2>
+      <h2 class="sec-title" style="font-family:'Crimson Pro',serif;font-size:28px;margin-bottom:6px;">Minimum Viable Digital Stack <span class="a">by RFI Category</span></h2>
       <div class="sec-rule"></div>
       <div class="grid-3 mt-16">
         <div class="card" style="border-top:4px solid var(--earth-l);">
-          <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--earth-l);letter-spacing:2px;margin-bottom:8px;">DM-RFI · 20 COMPONENTS</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--earth-l);letter-spacing:2px;margin-bottom:10px;">DM-RFI · 20 COMPONENTS</div>
           <div style="font-size:12px;color:var(--text2);line-height:1.9;">
-            Real-time CBS with API · Internet banking (staff) · Mobile app (own label) · UPI + RuPay card · Aadhaar eKYC (all branches) · V-CIP remote KYC · Digital KCC LOS (AI) · NACH seasonal · BBPS BOU · Micro-ATM BC network · NPA EWS (ML) · Compliance engine (auto) · MIS/BI dashboard · HRMS cloud · DMS enterprise · Cybersecurity SSPL SOC · PMFBY auto-integration · Credit bureau API · WhatsApp banking + IVR · Satellite NDVI API
+            Real-time CBS + API · Staff internet banking · SSPL mobile app · UPI + RuPay card · Aadhaar eKYC (all branches) · V-CIP remote KYC · Digital KCC LOS (AI) · NACH seasonal · BBPS BOU registered · Micro-ATM BC network (all PACS) · NPA EWS ML-based · Compliance engine (full auto) · MIS/BI Tier 3 dashboard · HRMS cloud · DMS enterprise · SSPL SOC cybersecurity · PMFBY auto-integration · Credit bureau API · WhatsApp banking + IVR · Satellite NDVI API
           </div>
-          <div style="margin-top:12px;background:var(--sand);border-radius:6px;padding:10px;">
+          <div style="margin-top:14px;background:var(--sand);border-radius:8px;padding:12px;">
             <div style="font-size:11px;font-weight:700;color:var(--navy);">Total MVDS Cost:</div>
-            <div style="font-size:13px;color:var(--earth);">₹1.5–3.5 Cr one-time + ₹30–60L annual</div>
+            <div style="font-size:14px;font-weight:600;color:var(--earth);">₹1.5–3.5 Cr one-time</div>
+            <div style="font-size:12px;color:var(--text3);">+ ₹30–60L annual operating</div>
           </div>
         </div>
         <div class="card" style="border-top:4px solid #7B5EA7;">
-          <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#7B5EA7;letter-spacing:2px;margin-bottom:8px;">PD-RFI · 12 COMPONENTS</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#7B5EA7;letter-spacing:2px;margin-bottom:10px;">PD-RFI · 12 COMPONENTS</div>
           <div style="font-size:12px;color:var(--text2);line-height:1.9;">
-            Full CBS (all branches) · Aadhaar eKYC (all branches) · UPI QR + AePS · NACH seasonal · RuPay debit card · Semi-auto compliance engine · MIS dashboard (Power BI) · BC micro-ATM network · BBPS (sub-agent) · Digital KCC hybrid form · HRMS SaaS (GreytHR/Zoho) · Cybersecurity minimum
+            Full CBS (all branches live) · Aadhaar eKYC (all branches) · UPI QR + AePS · NACH seasonal mandate · RuPay debit card · Semi-auto compliance engine · MIS Power BI dashboard · BC micro-ATM network (block level) · BBPS sub-agent model · Digital KCC hybrid form · GreytHR/Zoho HRMS · Endpoint security + OTP
           </div>
-          <div style="margin-top:12px;background:var(--sand);border-radius:6px;padding:10px;">
+          <div style="margin-top:14px;background:var(--sand);border-radius:8px;padding:12px;">
             <div style="font-size:11px;font-weight:700;color:var(--navy);">Total MVDS Cost:</div>
-            <div style="font-size:13px;color:#4A3090;">₹35–75L one-time + ₹10–20L annual</div>
+            <div style="font-size:14px;font-weight:600;color:#4A3090;">₹35–75L one-time</div>
+            <div style="font-size:12px;color:var(--text3);">+ ₹10–20L annual operating</div>
           </div>
         </div>
         <div class="card" style="border-top:4px solid var(--saffron);">
-          <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--saffron);letter-spacing:2px;margin-bottom:8px;">PDC-RFI · 6 COMPONENTS</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--saffron);letter-spacing:2px;margin-bottom:10px;">PDC-RFI · 6 COMPONENTS</div>
           <div style="font-size:12px;color:var(--text2);line-height:1.9;">
-            CBS stabilisation (100% branches) · Aadhaar eKYC at HQ branch · AePS cash-out via BC (district + 1 block) · USSD *99# for customer balance inquiry · Automated NABARD OSS data extract (semi-manual) · Endpoint security + OTP authentication
+            CBS stabilisation (100% branches) · Aadhaar eKYC at HQ branch · AePS via BC (district + 1–2 blocks) · USSD *99# for customer balance · CBS extract → Excel compliance template · Endpoint security + OTP authentication
           </div>
-          <div style="margin-top:12px;background:var(--sand);border-radius:6px;padding:10px;">
+          <div style="margin-top:14px;background:var(--sand);border-radius:8px;padding:12px;">
             <div style="font-size:11px;font-weight:700;color:var(--navy);">Total MVDS Cost:</div>
-            <div style="font-size:13px;color:var(--saffron);">₹10–25L one-time + ₹3–5L annual</div>
+            <div style="font-size:14px;font-weight:600;color:var(--saffron);">₹10–25L one-time</div>
+            <div style="font-size:12px;color:var(--text3);">+ ₹3–5L annual operating</div>
           </div>
         </div>
       </div>
@@ -2328,51 +2768,58 @@ body{font-family:'Inter',sans-serif;color:var(--text1);background:var(--cream);o
   </div>
 </section>
 
-<!-- ════════ STRATEGIC CONCLUSION ════════ -->
+<!-- ════════════════════════════════════════════════════════
+     STRATEGIC CONCLUSION SECTION
+════════════════════════════════════════════════════════ -->
 <section class="section section-dark">
   <div class="container">
     <div class="sec-header text-center reveal">
-      <div class="sec-eyelet">Section 11 · Closing</div>
+      <div class="sec-eyelet">Section 11 · Closing Statement</div>
       <h2 class="sec-title" style="color:var(--white);">Strategic <span style="color:var(--teal-b);">Conclusions</span></h2>
       <div class="sec-rule" style="margin:0 auto 24px;background:linear-gradient(90deg,var(--teal-b),var(--gold-l));"></div>
     </div>
 
     <!-- Priority Recommendation Table -->
     <div class="tbl-wrap reveal">
-      <h3 style="font-family:'Crimson Pro',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:14px;">The Definitive Priority Recommendation by RFI Category</h3>
+      <h3 style="font-family:'Crimson Pro',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:14px;">The Definitive Priority Recommendation — All 15 Products by RFI Category</h3>
       <table class="data-table">
         <thead><tr><th>Priority</th><th>Product</th><th>DM-RFI Action</th><th>PD-RFI Action</th><th>PDC-RFI Action</th><th>SSPL Role</th></tr></thead>
         <tbody>
           <tr><td style="font-weight:700;color:var(--teal-b);">P1 ★★★★★</td><td class="kpi-name">CBS Optimisation</td><td class="td-green">API-enable; PACS real-time link</td><td class="td-purple">Complete all branches; fix data quality</td><td class="td-orange">Stabilise; 100% branches live</td><td>Diagnostic + vendor coordination</td></tr>
-          <tr><td style="font-weight:700;color:var(--teal-b);">P2 ★★★★★</td><td class="kpi-name">Regulatory Compliance Engine</td><td class="td-green">Full auto + ENSURE auto-upload</td><td class="td-purple">CBS extract → semi-auto; 35-day cycle</td><td class="td-orange">CBS extract → Excel; 45 days</td><td>SSPL shared engine Phase 2</td></tr>
-          <tr><td style="font-weight:700;color:var(--teal-b);">P3 ★★★★★</td><td class="kpi-name">Digital KCC LOS</td><td class="td-green">AI-scored; satellite; auto-disbursal</td><td class="td-purple">Hybrid: digital form + manual Bhulekh</td><td class="td-orange">Paper scan + digital disbursal</td><td>SSPL lending platform + advisory</td></tr>
-          <tr><td style="font-weight:700;color:var(--teal-b);">P4 ★★★★★</td><td class="kpi-name">UPI / AePS / RuPay</td><td class="td-green">Full UPI + micro-ATM at every PACS BC</td><td class="td-purple">UPI QR + BC micro-ATM at block level</td><td class="td-orange">AePS only + USSD *99#</td><td>NPCI certification support</td></tr>
-          <tr><td style="font-weight:700;color:var(--teal-b);">P5 ★★★★★</td><td class="kpi-name">NPA Early Warning System</td><td class="td-green">ML: NDVI + CBS + weather</td><td class="td-purple">Rules-based; daily CBS + NACH bounce</td><td class="td-orange">Excel flag; weekly SMS to manager</td><td>SSPL shared EWS platform</td></tr>
-          <tr><td style="font-weight:700;color:#7B9EA7;">P6 ★★★★</td><td class="kpi-name">Mobile Banking / USSD</td><td class="td-green">SSPL white-label; 5+ languages</td><td class="td-purple">USSD *99# + SSPL app Phase 2</td><td class="td-orange">USSD + missed-call banking only</td><td>SSPL shared app; NPCI NUUP</td></tr>
-          <tr><td style="font-weight:700;color:#7B9EA7;">P7 ★★★★</td><td class="kpi-name">NACH Seasonal Mandate</td><td class="td-green">Full seasonal NACH + AePS fallback</td><td class="td-purple">Seasonal 50%+ loans; AePS fallback</td><td class="td-orange">AePS manual; NACH in Phase 3</td><td>CBS configuration + NPCI liaison</td></tr>
-          <tr><td style="font-weight:700;color:#7B9EA7;">P8 ★★★★</td><td class="kpi-name">BC Agent Network</td><td class="td-green">Micro-ATM at every PACS; BBPS + AePS</td><td class="td-purple">Block BCs with micro-ATM; BBPS sub-agent</td><td class="td-orange">District + 1–2 block BCs; AePS only</td><td>BC incentive design; device subsidy</td></tr>
-          <tr><td style="font-weight:700;color:var(--earth-l);">P9 ★★★★★</td><td class="kpi-name">AI Credit Scoring (DM only)</td><td class="td-green">NDVI + weather + PM Kisan + CBS</td><td>Phase 3 upgrade only</td><td>Not recommended yet</td><td>SSPL AI platform 2026</td></tr>
-          <tr><td style="font-weight:700;color:var(--earth-l);">P10 ★★★★</td><td class="kpi-name">FPO Supply Chain Finance</td><td class="td-green">Working capital + e-NWR; highest ROI</td><td class="td-purple">Phase 3: basic FPO working capital</td><td>Not yet recommended</td><td>NABARD RuralTech CoLab</td></tr>
+          <tr><td style="font-weight:700;color:var(--teal-b);">P2 ★★★★★</td><td class="kpi-name">Compliance Engine</td><td class="td-green">Full auto + ENSURE auto-upload</td><td class="td-purple">CBS extract → semi-auto; 35-day</td><td class="td-orange">CBS extract → Excel; 45 days</td><td>SSPL shared engine Phase 2</td></tr>
+          <tr><td style="font-weight:700;color:var(--teal-b);">P3 ★★★★★</td><td class="kpi-name">Digital KCC LOS</td><td class="td-green">AI + satellite + auto-disbursal</td><td class="td-purple">Hybrid: digital form + manual Bhulekh</td><td class="td-orange">Paper scan + digital disbursal</td><td>SSPL lending platform</td></tr>
+          <tr><td style="font-weight:700;color:var(--teal-b);">P4 ★★★★★</td><td class="kpi-name">UPI / AePS / RuPay</td><td class="td-green">Full UPI + micro-ATM every PACS BC</td><td class="td-purple">UPI QR + BC micro-ATM at block</td><td class="td-orange">AePS only + USSD *99#</td><td>NPCI certification support</td></tr>
+          <tr><td style="font-weight:700;color:var(--teal-b);">P5 ★★★★★</td><td class="kpi-name">NPA Early Warning</td><td class="td-green">ML: NDVI + CBS + weather</td><td class="td-purple">Rules-based; daily CBS + NACH bounce</td><td class="td-orange">Excel flag; weekly SMS to manager</td><td>SSPL shared EWS platform</td></tr>
+          <tr><td style="font-weight:700;color:var(--teal-b);">P6 ★★★★★</td><td class="kpi-name">NACH Seasonal</td><td class="td-green">Full seasonal + AePS fallback</td><td class="td-purple">Seasonal for 50%+ loans; AePS fallback</td><td class="td-orange">AePS manual; NACH in Phase 3</td><td>CBS config + NPCI liaison</td></tr>
+          <tr><td style="color:#7B9EA7;font-weight:700;">P7 ★★★★</td><td class="kpi-name">Mobile Banking/USSD</td><td class="td-green">SSPL app; 5+ languages</td><td class="td-purple">USSD *99# + SSPL app Phase 2</td><td class="td-orange">USSD + missed-call only</td><td>SSPL shared app; NPCI NUUP</td></tr>
+          <tr><td style="color:#7B9EA7;font-weight:700;">P8 ★★★★</td><td class="kpi-name">BC Agent Network</td><td class="td-green">Micro-ATM all PACS; BBPS+AePS</td><td class="td-purple">Block BCs; micro-ATM; BBPS sub-agent</td><td class="td-orange">District + 1–2 block BCs; AePS</td><td>BC incentive design; device subsidy</td></tr>
+          <tr><td style="color:#7B9EA7;font-weight:700;">P9 ★★★★</td><td class="kpi-name">BBPS Operating Unit</td><td class="td-green">BOU registered; all BCs sub-agents</td><td class="td-purple">BBPS sub-agent via existing BOU</td><td class="td-orange">BBPS via BC Phase 2</td><td>NPCI BOU certification support</td></tr>
+          <tr><td style="color:var(--earth-l);font-weight:700;">P10 ★★★★★</td><td class="kpi-name">AI Credit Scoring</td><td class="td-green">NDVI + weather + PM Kisan + CBS</td><td>Phase 3 upgrade only</td><td>Not yet recommended</td><td>SSPL AI platform 2026</td></tr>
+          <tr><td style="color:var(--earth-l);font-weight:700;">P11 ★★★★</td><td class="kpi-name">FPO Supply Chain Finance</td><td class="td-green">Working capital + e-NWR; highest ROI</td><td class="td-purple">Phase 3: basic FPO working capital</td><td>Not recommended yet</td><td>NABARD RuralTech CoLab</td></tr>
+          <tr><td style="color:var(--text3);">P12 ★★★</td><td class="kpi-name">HRMS + Payroll</td><td class="td-green">Keka/Spine; KPI-linked performance</td><td class="td-purple">GreytHR/Zoho; full payroll auto</td><td class="td-orange">GreytHR basic; payroll only</td><td>SSPL shared HRMS planned</td></tr>
+          <tr><td style="color:var(--saffron);font-weight:700;">P13 MAND.</td><td class="kpi-name">Cybersecurity SSPL SOC</td><td class="td-green">Full SOC + SIEM + bi-annual VAPT</td><td class="td-purple">SSPL SOC + endpoint + MFA; annual VAPT</td><td class="td-orange">Endpoint + VPN + OTP; quarterly audit</td><td>SSPL shared SOC — critical</td></tr>
+          <tr><td style="color:var(--text3);">P14 ★★★</td><td class="kpi-name">DMS / Digital Vault</td><td class="td-green">AI-DMS; NABARD audit access</td><td class="td-purple">Operational DMS with CBS hooks</td><td class="td-orange">Google Workspace folder structure</td><td>SSPL digital vault planned</td></tr>
+          <tr><td style="color:var(--text3);">P15 ★★★</td><td class="kpi-name">WhatsApp + IVR</td><td class="td-green">Full WhatsApp AI chatbot; 5+ languages</td><td class="td-purple">SSPL shared WhatsApp + IVR; 2 langs</td><td class="td-orange">Missed-call banking only; Hindi</td><td>SSPL shared WhatsApp 2025–26</td></tr>
         </tbody>
       </table>
     </div>
 
     <!-- Do Not List -->
     <div class="mt-40 reveal">
-      <h3 style="font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;">⚠️ The "Do Not" List — Products NOT Recommended for Direct DCCB Implementation</h3>
+      <h3 style="font-family:'Crimson Pro',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;">⚠️ The "Do Not" List — Products NOT for Direct DCCB Implementation</h3>
       <div class="grid-2">
         <div class="dark-card">
-          <div style="font-size:13px;color:rgba(255,255,255,.7);line-height:1.9;">
-            <div style="margin-bottom:8px;">❌ <strong style="color:var(--white);">Custom superapp like YONO</strong> — ₹4,000 crore development. Use SSPL white-label at ₹15–30L for 65% parity at 0.05% of cost.</div>
-            <div style="margin-bottom:8px;">❌ <strong style="color:var(--white);">Standalone TMS for treasury</strong> — CBS investment module covers 100% of DCCB treasury needs. Bloomberg-level TMS is irrelevant.</div>
-            <div style="margin-bottom:8px;">❌ <strong style="color:var(--white);">Dedicated AML for PDC-RFI</strong> — ₹10–30L/year unnecessary. Manual CTR/STR + SSPL shared AML (₹1–3L/year) is sufficient.</div>
+          <div style="font-size:13px;color:rgba(255,255,255,.75);line-height:2;">
+            <div>❌ <strong style="color:var(--white);">Custom superapp like YONO</strong> — ₹4,000 crore build cost. SSPL white-label delivers 65% parity at 0.05% of cost.</div>
+            <div>❌ <strong style="color:var(--white);">Standalone TMS for treasury</strong> — CBS investment module covers 100% of DCCB treasury needs. Bloomberg terminal is irrelevant.</div>
+            <div>❌ <strong style="color:var(--white);">Dedicated AML for PDC-RFI</strong> — ₹10–30L/year unnecessary. Manual CTR/STR + SSPL shared AML (₹1–3L) is sufficient.</div>
           </div>
         </div>
         <div class="dark-card">
-          <div style="font-size:13px;color:rgba(255,255,255,.7);line-height:1.9;">
-            <div style="margin-bottom:8px;">❌ <strong style="color:var(--white);">Own ATM at every branch</strong> — ₹15–40 crore for 50-branch DCCB. Shared ATM + micro-ATMs deliver equivalent coverage at 10% cost.</div>
-            <div style="margin-bottom:8px;">❌ <strong style="color:var(--white);">Derivatives / forex capability</strong> — Outside cooperative bank regulatory scope and business model entirely.</div>
-            <div style="margin-bottom:8px;">❌ <strong style="color:var(--white);">ML credit scoring for PDC-RFI before clean data</strong> — Garbage data = garbage model. 24 months of clean CBS history is the prerequisite.</div>
+          <div style="font-size:13px;color:rgba(255,255,255,.75);line-height:2;">
+            <div>❌ <strong style="color:var(--white);">Own ATM at every branch</strong> — ₹15–40 crore for 50-branch DCCB. Shared network + micro-ATMs = equivalent coverage at 10% cost.</div>
+            <div>❌ <strong style="color:var(--white);">Derivatives/forex capability</strong> — Outside cooperative bank regulatory scope entirely.</div>
+            <div>❌ <strong style="color:var(--white);">ML credit scoring on dirty data</strong> — Wait for 24 months of clean CBS history. Garbage in = garbage model; worse than a simple rule.</div>
           </div>
         </div>
       </div>
@@ -2381,30 +2828,33 @@ body{font-family:'Inter',sans-serif;color:var(--text1);background:var(--cream);o
     <!-- Closing quote -->
     <div class="mt-48 reveal">
       <div class="quote-card">
-        <div class="quote-text">"The transformation of India's 352 DCCBs is not a technological leap — it is a disciplined, sequenced progression that respects the enormous diversity of the rural cooperative banking ecosystem. The DCCB that begins its GBPEM assessment today, deploys its compliance engine in Month 1, activates seasonal NACH before the kharif harvest, and puts a micro-ATM in the hands of a BC agent in the farthest gram panchayat it serves — that DCCB will have earned the right to call itself a digital cooperative bank."</div>
+        <div class="quote-text">"The DCCB that deploys its compliance engine in Month 1, activates seasonal NACH before the kharif harvest, and puts a micro-ATM in the hands of a BC agent in its farthest gram panchayat — that DCCB will have earned the right to call itself a digital cooperative bank."</div>
         <div class="quote-source">— NABARD–SSPL Digital Transformation Framework 2025–2027</div>
       </div>
-      <div style="text-align:center;margin-top:32px;">
-        <div style="font-family:'Crimson Pro',serif;font-size:28px;font-weight:700;color:var(--teal-b);margin-bottom:6px;">सहकार से समृद्धि</div>
-        <div style="font-size:14px;color:rgba(255,255,255,.45);">Sahakar Se Samridhi — Prosperity Through Cooperation</div>
-        <div style="margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:10px;color:rgba(255,255,255,.25);letter-spacing:2px;">IFRS 9 / BASEL III ALIGNED · NABARD-SSPL ADVISORY · 2025–2027</div>
+      <div style="text-align:center;margin-top:36px;">
+        <div style="font-family:'Crimson Pro',serif;font-size:34px;font-weight:700;color:var(--teal-b);margin-bottom:8px;">सहकार से समृद्धि</div>
+        <div style="font-size:15px;color:rgba(255,255,255,.5);margin-bottom:6px;">Sahakar Se Samridhi — Prosperity Through Cooperation</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:rgba(255,255,255,.2);letter-spacing:2px;margin-top:12px;">IFRS 9 / BASEL III ALIGNED · NABARD-SSPL ADVISORY · 2025–2027 · UTTAR PRADESH</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════ FOOTER ════════ -->
+<!-- ════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
 <footer id="footer">
   <div class="footer-grid">
     <div>
       <div class="footer-brand">DCCB Digital Transformation Framework</div>
-      <p class="footer-tagline">A NABARD–SSPL Advisory Framework for Rural Financial Institution Transformation in Uttar Pradesh and across India's 352 District Central Cooperative Banks.</p>
+      <p class="footer-tagline">A NABARD–SSPL Advisory Framework for Rural Financial Institution Transformation. Primary focus: Uttar Pradesh's 50 District Central Cooperative Banks. Applicable across all 352 DCCBs nationally.</p>
       <div class="footer-badges">
         <span class="footer-badge">NABARD 2025</span>
         <span class="footer-badge">SSPL Advisory</span>
         <span class="footer-badge">IFRS 9</span>
         <span class="footer-badge">Basel III</span>
         <span class="footer-badge">UP-Contextual</span>
+        <span class="footer-badge">GitHub Pages Ready</span>
       </div>
     </div>
     <div>
@@ -2431,7 +2881,7 @@ body{font-family:'Inter',sans-serif;color:var(--text1);background:var(--cream);o
       <div class="footer-col-title">Reference</div>
       <ul class="footer-links">
         <li><a href="#regions">Regional Heat Map</a></li>
-        <li><a href="#annexures">Glossary (25+ terms)</a></li>
+        <li><a href="#annexures">Glossary (30 Terms)</a></li>
         <li><a href="#annexures">CBS Vendor Table</a></li>
         <li><a href="#annexures">MVDS by Category</a></li>
         <li><a href="#context">UP Field Context</a></li>
@@ -2439,16 +2889,18 @@ body{font-family:'Inter',sans-serif;color:var(--text1);background:var(--cream);o
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="footer-copy">© 2025 NABARD–SSPL Digital Transformation Advisory · Prepared for DCCB Leadership · Uttar Pradesh</div>
+    <div class="footer-copy">© 2025 NABARD–SSPL Digital Transformation Advisory · Prepared for DCCB Leadership, Uttar Pradesh · All data from NABARD reports, RBI data, and field diagnostics</div>
     <div class="footer-hindi">सहकार से समृद्धि</div>
   </div>
 </footer>
 
-<!-- ════════ WHEAT SVG GENERATOR + JS ════════ -->
+<!-- ════════════════════════════════════════════════════════
+     JAVASCRIPT — FULLY REBUILT AND FIXED
+════════════════════════════════════════════════════════ -->
 <script>
-// Generate wheat stalks
+// ── Wheat generation ────────────────────────────────────────────────────────
 function makeSvgStalk(h, col) {
-  return `<svg width="18" height="${h}" viewBox="0 0 18 ${h}" fill="none" xmlns="http://www.w3.org/2000/svg">
+  return `<svg width="18" height="${h}" viewBox="0 0 18 ${h}" fill="none">
     <line x1="9" y1="${h}" x2="9" y2="${Math.round(h*0.2)}" stroke="${col}" stroke-width="1.5"/>
     <ellipse cx="9" cy="${Math.round(h*0.18)}" rx="3" ry="7" fill="${col}" opacity=".9"/>
     <ellipse cx="6" cy="${Math.round(h*0.32)}" rx="2.5" ry="5" fill="${col}" opacity=".8" transform="rotate(-20 6 ${Math.round(h*0.32)})"/>
@@ -2469,139 +2921,168 @@ fillWheat('wheat-far', 90, 28, '#8B6914');
 fillWheat('wheat-mid', 80, 40, '#A07A1A');
 fillWheat('wheat-near', 70, 56, '#C9A030');
 
-// Progress bar
+// ── Progress bar ─────────────────────────────────────────────────────────────
 window.addEventListener('scroll', () => {
   const s = document.documentElement.scrollTop;
   const h = document.documentElement.scrollHeight - window.innerHeight;
-  document.getElementById('progress-bar').style.width = (s / h * 100) + '%';
-});
+  const bar = document.getElementById('progress-bar');
+  if (bar) bar.style.width = (s / h * 100) + '%';
+}, { passive: true });
 
-// Nav active state
+// ── Nav active link highlighting ──────────────────────────────────────────────
 const navLinks = document.querySelectorAll('#nav a.nl');
-const sections = document.querySelectorAll('section[id], div[id]');
-window.addEventListener('scroll', () => {
-  let cur = '';
-  sections.forEach(s => {
-    if (window.scrollY >= s.offsetTop - 80) cur = s.getAttribute('id');
-  });
+const allSections = Array.from(document.querySelectorAll('section[id]'));
+function updateNav() {
+  const scrollY = window.scrollY + 80;
+  let current = '';
+  allSections.forEach(s => { if (s.offsetTop <= scrollY) current = s.id; });
   navLinks.forEach(a => {
-    a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
   });
-});
+}
+window.addEventListener('scroll', updateNav, { passive: true });
 
-// Reveal on scroll
-const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
-const observer = new IntersectionObserver((entries) => {
+// ── Scroll-reveal IntersectionObserver ───────────────────────────────────────
+const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
       e.target.classList.add('visible');
-      observer.unobserve(e.target);
+      revealObserver.unobserve(e.target);
     }
   });
-}, { threshold: 0.12 });
-revealEls.forEach(el => observer.observe(el));
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale')
+  .forEach(el => revealObserver.observe(el));
 
-// Metric bars animation
-const barObserver = new IntersectionObserver((entries) => {
+// ── Metric bars animation ─────────────────────────────────────────────────────
+const barObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
-      const bar = e.target;
-      const w = bar.getAttribute('data-width');
-      if (w) {
-        setTimeout(() => { bar.style.width = w + '%'; }, 200);
-      }
-      barObserver.unobserve(bar);
+      const w = e.target.getAttribute('data-width');
+      if (w) setTimeout(() => { e.target.style.width = w + '%'; }, 200);
+      barObs.unobserve(e.target);
     }
   });
 }, { threshold: 0.3 });
-document.querySelectorAll('.metric-bar').forEach(b => barObserver.observe(b));
+document.querySelectorAll('.metric-bar').forEach(b => barObs.observe(b));
 
-// Cost comparison bars
-const costBars = document.querySelectorAll('.bar-standalone, .bar-sspl');
-const costBarObserver = new IntersectionObserver((entries) => {
+// ── SSPL cost comparison bars ─────────────────────────────────────────────────
+const costObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
-      const bar = e.target;
-      const w = bar.getAttribute('data-w');
-      if (w) {
-        setTimeout(() => { bar.style.width = w + '%'; }, 300);
-      }
-      costBarObserver.unobserve(bar);
+      const w = e.target.getAttribute('data-w');
+      if (w) setTimeout(() => { e.target.style.width = w + '%'; }, 300);
+      costObs.unobserve(e.target);
     }
   });
-}, { threshold: 0.3 });
-costBars.forEach(b => costBarObserver.observe(b));
+}, { threshold: 0.2 });
+document.querySelectorAll('.cost-bar-standalone, .cost-bar-sspl').forEach(b => costObs.observe(b));
 
-// Workflow tabs
+// ── Workflow tabs (KCC LOS section) ──────────────────────────────────────────
 function showWorkflow(id, btn) {
+  // Hide all workflow panels
   document.querySelectorAll('.workflow-content').forEach(c => c.classList.remove('active'));
-  document.querySelectorAll('.wtab').forEach(t => { t.classList.remove('active','dm','pd','pdc'); });
-  document.getElementById('wf-' + id).classList.add('active');
+  // Remove active from all tabs
+  document.querySelectorAll('.wtab').forEach(t => t.classList.remove('active', 'dm', 'pd', 'pdc'));
+  // Show selected panel
+  const panel = document.getElementById('wf-' + id);
+  if (panel) panel.classList.add('active');
+  // Activate clicked tab
   btn.classList.add('active', id);
 }
 
-// Roadmap tabs
-function showRoadmap(id, el) {
+// ── Roadmap tabs — FIXED ──────────────────────────────────────────────────────
+function switchRoadmap(el) {
+  const target = el.getAttribute('data-target');
+  if (!target) return;
+  const id = el.classList.contains('dm') ? 'dm' : el.classList.contains('pd') ? 'pd' : 'pdc';
+  // Hide all roadmap panels
   document.querySelectorAll('.roadmap-content').forEach(c => c.classList.remove('active'));
-  document.querySelectorAll('.rtab').forEach(t => { t.classList.remove('active','dm','pd','pdc'); });
-  document.getElementById('rm-' + id).classList.add('active');
+  // Remove active from all roadmap tabs
+  document.querySelectorAll('.rtab').forEach(t => t.classList.remove('active', 'dm', 'pd', 'pdc'));
+  // Show target panel
+  const panel = document.getElementById(target);
+  if (panel) {
+    panel.classList.add('active');
+    // Trigger reveal animations inside the newly shown panel
+    panel.querySelectorAll('.reveal').forEach(r => {
+      setTimeout(() => r.classList.add('visible'), 50);
+    });
+  }
+  // Mark tab active
   el.classList.add('active', id);
-  // Re-trigger reveals in the new pane
-  document.querySelectorAll('#rm-' + id + ' .reveal').forEach(el => {
-    el.classList.add('visible');
-  });
 }
 
-// Glossary accordion
+// ── Glossary accordion ────────────────────────────────────────────────────────
 function toggleGlo(termEl) {
   const item = termEl.closest('.glo-item');
+  if (!item) return;
   const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.glo-item.open').forEach(i => i.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
+  // Close all open items
+  document.querySelectorAll('.glo-item.open').forEach(i => {
+    i.classList.remove('open');
+    const exp = i.querySelector('.glo-expand');
+    if (exp) exp.textContent = '+';
+  });
+  // Open clicked item if it was closed
+  if (!isOpen) {
+    item.classList.add('open');
+    const exp = item.querySelector('.glo-expand');
+    if (exp) exp.textContent = '×';
+  }
 }
 
-// Smooth scroll offset for fixed nav
+// ── Smooth scroll with nav offset ────────────────────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
-    const target = document.querySelector(a.getAttribute('href'));
+    const href = a.getAttribute('href');
+    if (href === '#') return;
+    const target = document.querySelector(href);
     if (target) {
       e.preventDefault();
-      window.scrollTo({ top: target.offsetTop - 60, behavior: 'smooth' });
+      window.scrollTo({ top: target.offsetTop - 64, behavior: 'smooth' });
     }
   });
 });
 
-// Counter animation for hero stats
-function animateCount(el) {
-  const target = parseFloat(el.getAttribute('data-count'));
+// ── Counter animation ─────────────────────────────────────────────────────────
+function animateCounter(el) {
+  const raw = el.getAttribute('data-count');
+  if (!raw) return;
+  const isInt = !raw.includes('.');
+  const target = parseFloat(raw);
   if (isNaN(target)) return;
   let start = 0;
-  const step = target / 60;
+  const duration = 1200;
+  const step = target / (duration / 16);
   const timer = setInterval(() => {
     start += step;
-    if (start >= target) { start = target; clearInterval(timer); }
-    el.textContent = Math.round(start);
-  }, 20);
+    if (start >= target) {
+      start = target;
+      clearInterval(timer);
+    }
+    el.textContent = isInt ? Math.round(start) : start.toFixed(1);
+  }, 16);
 }
-const hsNums = document.querySelectorAll('.hs-num[data-count]');
-const hsObserver = new IntersectionObserver(entries => {
+const countObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
-    if (e.isIntersecting) { animateCount(e.target); hsObserver.unobserve(e.target); }
+    if (e.isIntersecting) {
+      animateCounter(e.target);
+      countObs.unobserve(e.target);
+    }
   });
-});
-hsNums.forEach(n => hsObserver.observe(n));
+}, { threshold: 0.5 });
+document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
 
-// Context stat counters
-const ctxNums = document.querySelectorAll('.ctx-stat-num[data-count]');
-const ctxObs = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) { animateCount(e.target); ctxObs.unobserve(e.target); }
+// ── Init: trigger nav + reveal for elements already in view ──────────────────
+updateNav();
+// Force-reveal items already in viewport on load
+setTimeout(() => {
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) el.classList.add('visible');
   });
-});
-ctxNums.forEach(n => ctxObs.observe(n));
-
-// Initial reveal for elements already in viewport
-window.dispatchEvent(new Event('scroll'));
+}, 100);
 </script>
 </body>
 </html>
